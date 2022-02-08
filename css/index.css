@@ -1,0 +1,107 @@
+:root {
+  --manatee: #9f9aa4ff;
+  --pale-pink: #e7cfcdff;
+  --light-gray: #cfd8d7ff;
+  --opal: #b5c9c3ff;
+  --thistle: #cab1bdff;
+}
+
+body {
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  background-color: var(--light-gray);
+}
+
+header {
+  display: flex;
+  font-size: 2em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 30%;
+  height: 30%;
+  margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 1.2em;
+  }
+  header img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .content .triviaFacts {
+    font-size: 1rem;
+    grid-template-rows: max-content max-content;
+    row-gap: 1rem;
+  }
+
+  .content table {
+    font-size: 1.2rem;
+  }
+
+  .content table img {
+    width: 15vh;
+    height: 15vh;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  header img {
+    width: 40%;
+    height: 40%;
+  }
+
+  .content .triviaFacts {
+    font-size: 1.4rem;
+    grid-template-columns: 50% 50%;
+    column-gap: 2rem;
+  }
+
+  .content table {
+    font-size: 1.5rem;
+  }
+
+  .content table img {
+    width: 20vh;
+    height: 20vh;
+  }
+}
+
+header h1 {
+  margin: 2%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content .triviaFacts {
+  display: grid;
+  background-color: var(--opal);
+  border-radius: 30px;
+  padding: 1.5rem 3rem;
+  margin: 5%;
+}
+
+.content table caption {
+  font-size: 2rem;
+}
+
+.content table img {
+  border-radius: 50%;
+  display: inline;
+  margin: 0 auto;
+}
