@@ -105,3 +105,13 @@ header h1 {
   display: inline;
   margin: 0 auto;
 }
+
+.content table {
+  border-collapse: collapse;
+}
+
+.content th,
+tr {
+  border: 5px solid var(--manatee);
+  padding: 1.1rem;
+}
